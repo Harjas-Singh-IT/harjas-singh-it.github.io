@@ -1,2 +1,2 @@
 # harjas-singh-it.github.io
-Portfolio by Harjas Singh for ITprojects and School Work
+Portfolio by Harjas Singh for IT projects and School Work

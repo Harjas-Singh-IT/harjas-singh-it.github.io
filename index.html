@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harjas Singh – Portfolio | IT-Ausbildung & Praktikum</title>
+<meta name="description" content="Portfolio von Harjas Singh: Informationstechnik-Schüler aus Obertshausen, auf der Suche nach einer IT-Ausbildung und einem Praktikum.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="glass-header">
+  <nav>
+    <div class="logo">Harjas <span>Singh</span></div>
+    <button class="menu-btn" aria-label="Menü öffnen" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <ul id="menu">
+      <li><a href="#home">Start</a></li>
+      <li><a href="#lebenslauf">Lebenslauf</a></li>
+      <li><a href="#it-skills">IT-Kenntnisse</a></li>
+      <li><a href="#projekte">Projekte</a></li>
+      <li><a href="#lernfelder">Lernfelder</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content fade-in">
+    <div class="hero-left">
+      <h1>Hallo, ich bin <span class="highlight">Harjas Singh</span></h1>
+      <p class="role">IT-Schüler auf der Suche nach Ausbildung und Praktikum</p>
+      <p>Ich bin 20 Jahre alt, wohne in Obertshausen und lebe seit 2019 in Deutschland. Seit August 2025 besuche ich die Höhere Berufsfachschule für Informationstechnik an der August-Bebel-Schule in Offenbach. Mein Schwerpunkt: IT-Systeme, Netzwerke und Datenanalyse. Dazu bringe ich über drei Jahre Erfahrung im Kundenkontakt mit.</p>
+      <a href="#projekte" class="btn">Meine Projekte</a>
+      <a href="#contact" class="btn btn-outline">Kontakt aufnehmen</a>
+    </div>
+    <div class="hero-right">
+      <img src="img/profil.jpg" alt="Porträt von Harjas Singh" class="profile-img">
+    </div>
+  </div>
+</section>
+
+<section id="lebenslauf" class="section">
+  <div class="glass">
+    <h2>Lebenslauf</h2>
+    <div class="cv-grid">
+      <div>
+        <h3>Ausbildung</h3>
+        <ul class="timeline">
+          <li><span class="date">seit 08/2025</span><strong>Höhere Berufsfachschule, Informationstechnik</strong>August-Bebel-Schule, Offenbach</li>
+          <li><span class="date">09/2023 – 06/2025</span><strong>Berufsfachschule Wirtschaft und Verwaltung</strong>Georg-Kerschensteiner-Schule, Obertshausen · Realschulabschluss</li>
+          <li><span class="date">08/2021 – 07/2023</span><strong>Hauptschulabschluss</strong>Hermann-Hesse-Schule, Obertshausen</li>
+        </ul>
+        <h3 style="margin-top:35px">Praktika</h3>
+        <ul class="timeline">
+          <li><span class="date">06/2026 – 07/2026</span><strong>Air India, Frankfurt</strong>Datenanalyse und IT-Support: Daten aufbereiten, Tabellen und Diagramme erstellen</li>
+          <li><span class="date">03/2024 – 04/2024</span><strong>Praktikum im Hotelmanagement</strong>Hotel Europa Life & Style</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Berufserfahrung</h3>
+        <ul class="timeline">
+          <li><span class="date">seit 06/2025</span><strong>Airport Staff GmbH, Frankfurter Flughafen</strong>Warenverräumung und Kundenbetreuung</li>
+          <li><span class="date">03/2025 – 06/2025</span><strong>Servicekraft & Barkeeper, Crown of India</strong>Frankfurt und Eschborn</li>
+          <li><span class="date">06/2022 – 02/2025</span><strong>Servicekraft & Barkeeper, eatDOORI</strong>Frankfurt und Mainz</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="it-skills" class="section">
+  <div class="glass">
+    <h2>IT-Kenntnisse</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><h3>Netzwerk und Systeme</h3><p>Linux (Debian), Windows, Hyper-V, IPv4 und Subnetting, SSH, FTP</p></div>
+      <div class="skill-box"><h3>Web und Programmierung</h3><p>HTML, CSS, Java (Grundlagen)</p></div>
+      <div class="skill-box"><h3>Daten und Office</h3><p>Excel, Word, PowerPoint, Datenaufbereitung und Diagramme</p></div>
+      <div class="skill-box"><h3>Arbeitsweise</h3><p>Kundenkommunikation, Teamarbeit, Dokumentation, Präsentation</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projekte" class="section">
+  <div class="glass">
+    <h2>Projekte</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Linux-Cluster mit drei Knoten</h3>
+        <p>Ein Rechencluster aus einem Master- und zwei Worker-Knoten (Debian Linux), virtualisiert mit Hyper-V. Parallele Berechnungen laufen über Open MPI, die Administration über OpenSSH. Die Knoten finden sich per Avahi (mDNS) über ihre Hostnamen, Dateien werden per vsftpd übertragen, und ein Dashboard in HTML und CSS auf einem Apache-Server zeigt den Clusterstatus.</p>
+        <p class="tags"><span>Debian</span><span>Hyper-V</span><span>Open MPI</span><span>Apache</span><span>SSH</span><span>FTP</span></p>
+      </div>
+      <div class="skill-box">
+        <h3>Diese Portfolio-Website</h3>
+        <p>Komplett selbst mit HTML und CSS gebaut: Lebenslauf, Projekte und eine eigene Seite für jedes Lernfeld aus dem Unterricht.</p>
+        <p class="tags"><span>HTML</span><span>CSS</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lernfelder" class="section">
+  <div class="glass">
+    <h2>Lernfelder</h2>
+    <p class="intro">Zu jedem Lernfeld habe ich zusammengefasst, was ich gelernt habe.</p>
+    <div class="skills-grid small">
+      <a href="html/lernfeld1.html" class="skill-card">Lernfeld 1<br><small>Mathematik</small></a>
+      <a href="html/lernfeld2.html" class="skill-card">Lernfeld 2<br><small>Physik</small></a>
+      <a href="html/lernfeld3.html" class="skill-card">Lernfeld 3<br><small>Englisch</small></a>
+      <a href="html/lernfeld4.html" class="skill-card">Lernfeld 4<br><small>Präsentation und Kommunikation</small></a>
+      <a href="html/lernfeld5.html" class="skill-card">Lernfeld 5<br><small>Computersysteme</small></a>
+      <a href="html/lernfeld6.html" class="skill-card">Lernfeld 6<br><small>IT-Systeme dokumentieren</small></a>
+      <a href="html/lernfeld7.html" class="skill-card">Lernfeld 7<br><small>Anwendungen entwickeln</small></a>
+      <a href="html/lernfeld8.html" class="skill-card">Lernfeld 8<br><small>Netzwerke</small></a>
+      <a href="html/lernfeld9.html" class="skill-card">Lernfeld 9<br><small>Netzwerkdienste</small></a>
+      <a href="html/lernfeld10.html" class="skill-card">Lernfeld 10<br><small>Projekte planen</small></a>
+      <a href="html/deutsch.html" class="skill-card">Deutsch</a>
+      <a href="html/powi.html" class="skill-card">Powi</a>
+      <a href="html/ethik.html" class="skill-card">Ethik</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="glass contact-container">
+    <h2>Kontakt</h2>
+    <p>Ich freue mich über Einladungen zu Gesprächen, Praktika und Ausbildungsangebote.</p>
+    <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:Harjas.singh.it@gmail.com">Harjas.singh.it@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/harjas-singh-020623424" target="_blank" rel="noopener" class="social-btn linkedin"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+      <a href="https://www.instagram.com/harjas__19/" target="_blank" rel="noopener" class="social-btn instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+      <a href="https://wa.me/491726915372" target="_blank" rel="noopener" class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Harjas Singh · Obertshausen · <a href="impressum.html">Impressum und Datenschutz</a>
+</footer>
+
+<script>
+const btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+btn.addEventListener('click',()=>{const o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.section').forEach(s=>{s.classList.add('reveal');io.observe(s)});
+</script>
+</body>
+</html>

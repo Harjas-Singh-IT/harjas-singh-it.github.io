@@ -1,0 +1,104 @@
+:root{--bg:#0f0f1a;--cyan:#00eaff;--text:#fff;--muted:#cfcfcf;--glass:rgba(255,255,255,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3{margin:0}
+h2{font-size:2rem;margin-bottom:10px}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+.glass-header{width:100%;position:fixed;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(15,15,26,.75);border-bottom:1px solid rgba(255,255,255,.08)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 50px}
+.logo{font-size:24px;font-weight:700;letter-spacing:1px}
+.logo span{color:var(--cyan)}
+nav ul{list-style:none;display:flex;gap:30px;margin:0;padding:0}
+nav ul li a{text-decoration:none;color:#d8d8d8;font-weight:500;transition:.3s}
+nav ul li a:hover{color:var(--cyan)}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:24px;cursor:pointer}
+
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 50px 40px}
+.hero-content{display:flex;justify-content:space-between;align-items:center;gap:40px;width:100%}
+.hero-left{max-width:640px}
+.hero-left h1{font-size:2.8rem;line-height:1.15}
+.highlight{color:var(--cyan)}
+.role{color:var(--cyan);font-weight:600;margin:12px 0 18px}
+.hero-right{margin-right:50px}
+.profile-img{width:280px;height:280px;object-fit:cover;object-position:center 20%;border-radius:50%;border:4px solid rgba(0,234,255,.7);box-shadow:0 0 20px rgba(0,234,255,.4),0 0 40px rgba(0,234,255,.2)}
+
+.btn{display:inline-block;margin:25px 12px 0 0;padding:14px 28px;background:var(--cyan);color:#000;border-radius:10px;text-decoration:none;font-weight:600;transition:.3s}
+.btn:hover{transform:scale(1.05)}
+.btn-outline{background:transparent;color:var(--cyan);border:2px solid var(--cyan)}
+
+.section{padding:90px 50px 20px;scroll-margin-top:60px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.reveal.show{opacity:1;transform:none}
+.glass{max-width:1100px;margin:0 auto;background:var(--glass);border-radius:15px;padding:45px;backdrop-filter:blur(15px);box-shadow:0 4px 30px rgba(0,234,255,.1)}
+.intro{color:var(--muted)}
+
+.cv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;margin-top:25px}
+.cv-grid h3{color:var(--cyan);margin-bottom:15px}
+.timeline{list-style:none;margin:0;padding:0 0 0 20px;border-left:2px solid rgba(0,234,255,.4)}
+.timeline li{margin-bottom:22px;color:var(--muted)}
+.timeline strong{display:block;color:#fff}
+.date{display:block;font-size:.85rem;color:var(--cyan)}
+
+.skills-grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:30px}
+.skills-grid.small{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.skill-box,.skill-card{background:var(--glass);padding:25px;border-radius:12px;color:#fff}
+.skill-box h3{margin-bottom:10px;color:var(--cyan)}
+.skill-box p{margin:0 0 12px;color:var(--muted)}
+.skill-card{text-decoration:none;display:flex;justify-content:center;align-items:center;text-align:center;transition:.3s}
+.skill-card:hover{transform:translateY(-6px);background:rgba(0,234,255,.2)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:.8rem;padding:4px 12px;border-radius:20px;border:1px solid rgba(0,234,255,.5);color:var(--cyan)}
+
+.contact-container p{font-size:1.1rem;margin:10px 0;color:#ccc}
+.mail{color:#fff}
+.social-links{display:flex;flex-wrap:wrap;gap:15px;margin-top:25px}
+.social-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:10px;background:var(--glass);color:#fff;text-decoration:none;font-weight:600;transition:.3s}
+.social-btn i{font-size:22px}
+.social-btn:hover{transform:translateY(-4px)}
+.linkedin:hover{background:#0a66c2}
+.instagram:hover{background:#e1306c}
+.whatsapp:hover{background:#25d366;color:#000}
+
+footer{text-align:center;padding:20px;background:rgba(255,255,255,.05);margin-top:60px;color:#ccc}
+footer a{color:#ccc}
+.fade-in{opacity:0;animation:fadeIn 1.2s ease forwards}
+@keyframes fadeIn{to{opacity:1}}
+
+/* Lernfeld-Unterseiten */
+.lernfeld-detail{padding-top:140px}
+.lernfeld-box{max-width:900px;margin:auto}
+.lernfeld-box h2{color:var(--cyan);margin-bottom:20px}
+.lernfeld-intro{font-size:1.05rem;color:var(--muted);margin-bottom:30px}
+.lernfeld-box h3{margin:30px 0 10px;font-size:1.1rem}
+.lernfeld-box p{line-height:1.7;color:#ddd}
+.lernfeld-list{padding-left:20px;margin-top:10px}
+.lernfeld-list li{margin-bottom:8px;color:#ddd}
+
+@media (max-width:900px){
+  nav{padding:14px 24px}
+  .menu-btn{display:block}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(15,15,26,.97)}
+  nav ul.open{display:flex}
+  nav ul li a{display:block;padding:14px 24px}
+  .hero{padding:110px 24px 40px}
+  .hero-content{flex-direction:column-reverse;text-align:center}
+  .hero-left h1{font-size:2.1rem}
+  .hero-right{margin:0}
+  .profile-img{width:210px;height:210px}
+}
+@media (max-width:600px){
+  .section{padding:70px 16px 10px}
+  .glass{padding:25px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal,.fade-in{opacity:1;transform:none;animation:none;transition:none}
+}
+
+.skill-card small{display:block;color:var(--muted);font-size:.8rem}
+.logo{text-decoration:none;color:#fff}
+.lf-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:40px}
+.lf-nav .btn{margin:0}
